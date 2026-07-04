@@ -1,9 +1,45 @@
 {
   "updated": "2026-07-04",
   "items": [
-    {"title": "Anthropic News（公式ブログ）", "link": "https://www.anthropic.com/news", "source": "Anthropic"},
-    {"title": "OpenAI News（公式ブログ）", "link": "https://openai.com/news/", "source": "OpenAI"},
-    {"title": "Google DeepMind Blog", "link": "https://deepmind.google/discover/blog/", "source": "DeepMind"},
-    {"title": "ITmedia AI+ 最新記事", "link": "https://www.itmedia.co.jp/aiplus/", "source": "ITmedia"}
+    {
+      "title": "米トランプ大統領、AI規制は「できるだけ介入少なく」 中国に対して開発競争「大幅リード」を強調",
+      "link": "https://www.itmedia.co.jp/aiplus/article/2607/04/2000000159/",
+      "source": "ITmedia AI+"
+    },
+    {
+      "title": "フィジカルAIに挑む日の丸連合、「Noetra」とは何か",
+      "link": "https://monoist.itmedia.co.jp/mn/articles/2607/04/news016.html",
+      "source": "ITmedia AI+"
+    },
+    {
+      "title": "3万円で「Yahoo!ニュース」にPR掲載 プレスリリースをAIで「ニュース風記事」に",
+      "link": "https://www.itmedia.co.jp/news/articles/2607/03/news116.html",
+      "source": "ITmedia AI+"
+    },
+    {
+      "title": "UNIX系コマンドをWindowsに移植／macOS上にLinuxコンテナを統合／Ubuntu、開発環境をコマンド一発で構築ほか、2026年6月の人気記事",
+      "link": "https://www.publickey1.jp/blog/26/unixwindowsmacoslinuxubuntu20266.html",
+      "source": "Publickey"
+    },
+    {
+      "title": "DNSを基盤にAIエージェントに信頼できる名前を与える「Agent Name Service（ANS）」、立ち上げ意向をLinux Foundationが発表",
+      "link": "https://www.publickey1.jp/blog/26/dnsaiagent_name_serviceanslinux_foundation.html",
+      "source": "Publickey"
+    },
+    {
+      "title": "静的サイトジェネレータ「Astro 7.0」正式リリース、ビルドシステムがVite 8/Rolldownに、Rust製コンパイラ採用で高速化",
+      "link": "https://www.publickey1.jp/blog/26/astro_70vite_8rolldownrust.html",
+      "source": "Publickey"
+    },
+    {
+      "title": "「生成AI」の進化で賞やコンテストはどうなる？（2）小説編【調査情報デジタル】 - TBS NEWS DIG",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFA2TktySGkwb3lQdEJFSVJBWjdYN0xpYXFzNVd5bTlNcktwMENQZ0VWNGpLRHAyQnRabnA5TmRNSnFOR09nLVBZRzdvX1lMek1YTWlaMVYyVQ?oc=5",
+      "source": "Google News"
+    },
+    {
+      "title": "生成AIツール「業務で活用」個人の6割 「簡易的な業務にしか使えていない」課題も - 産経ニュース",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9qRkQwd1V1b1NBQy1iWHFCWDZrdWdJZGFUQ09EZGhWcUpvc0RnSzZ4QXlfSFpTTjdsdzNxNUtlNmlxQzZpcXdTNFZzNENXRGNla3ltTE9vNk1SVnlXZmUzSEoyZHdkZ25TbThObFNrc291Nk81X0E?oc=5",
+      "source": "Google News"
+    }
   ]
 }

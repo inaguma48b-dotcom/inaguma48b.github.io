@@ -1,0 +1,9 @@
+{
+  "updated": "2026-07-04",
+  "items": [
+    {"title": "Anthropic News（公式ブログ）", "link": "https://www.anthropic.com/news", "source": "Anthropic"},
+    {"title": "OpenAI News（公式ブログ）", "link": "https://openai.com/news/", "source": "OpenAI"},
+    {"title": "Google DeepMind Blog", "link": "https://deepmind.google/discover/blog/", "source": "DeepMind"},
+    {"title": "ITmedia AI+ 最新記事", "link": "https://www.itmedia.co.jp/aiplus/", "source": "ITmedia"}
+  ]
+}

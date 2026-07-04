@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>INAGUMA | 名古屋のSE × AI × アイドル</title>
+<meta name="description" content="名古屋で働くシステムエンジニア・いなぐまの個人サイト。システム開発・運用保守、AI活用、そして推し活の記録。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* 推し色（ペンライト）— JSで切替 */
+  --pen: #ff5aa7;
+  --pen-soft: rgba(255,90,167,.18);
+  --pen-glow: rgba(255,90,167,.45);
+  /* 固定パレット */
+  --stage: #0b0d16;        /* 会場の暗転 */
+  --stage-2: #12152280;    /* 半透明パネル */
+  --ink: #e9ecf4;
+  --ink-dim: #9aa1b5;
+  --gold: #d9b45a;         /* 名古屋・金鯱ゴールド */
+  --line: #262b3d;
+  --radius: 14px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--stage);
+  color:var(--ink);
+  font-family:"Zen Kaku Gothic New",sans-serif;
+  line-height:1.85;
+  overflow-x:hidden;
+}
+::selection{background:var(--pen);color:#0b0d16}
+
+/* ===== 背景：客席のペンライトの海 ===== */
+#sea{
+  position:fixed;inset:0;z-index:0;pointer-events:none;
+  opacity:.55;
+}
+.dot{
+  position:absolute;bottom:-4px;
+  width:3px;height:14px;border-radius:2px;
+  background:var(--pen);
+  box-shadow:0 0 8px var(--pen-glow);
+  transform-origin:bottom center;
+  animation:sway 3.2s ease-in-out infinite alternate;
+}
+@keyframes sway{
+  from{transform:rotate(-14deg)}
+  to{transform:rotate(14deg)}
+}
+main{position:relative;z-index:1}
+
+/* ===== ヘッダー ===== */
+header{
+  position:fixed;top:0;left:0;right:0;z-index:10;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:14px 24px;
+  background:rgba(11,13,22,.72);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.logo{
+  font-family:"DotGothic16",sans-serif;
+  font-size:1.15rem;letter-spacing:.12em;
+  color:var(--ink);text-decoration:none;
+}
+.logo span{color:var(--pen)}
+nav{display:flex;gap:18px}
+nav a{
+  color:var(--ink-dim);text-decoration:none;font-size:.85rem;
+  transition:color .2s;
+}
+nav a:hover,nav a:focus-visible{color:var(--pen)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--pen);outline-offset:3px;border-radius:4px}
+
+/* ===== ヒーロー：開演 ===== */
+.hero{
+  min-height:100svh;
+  display:flex;flex-direction:column;justify-content:center;align-items:center;
+  text-align:center;padding:110px 20px 80px;
+  position:relative;
+}
+.hero::before{
+  content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);
+  width:min(900px,120vw);height:65%;
+  background:radial-gradient(ellipse at top,var(--pen-soft),transparent 65%);
+  pointer-events:none;
+  transition:background .6s;
+}
+.eyebrow{
+  font-family:"JetBrains Mono",monospace;
+  font-size:.78rem;letter-spacing:.28em;
+  color:var(--gold);
+  margin-bottom:22px;
+}
+h1{
+  font-family:"DotGothic16",sans-serif;
+  font-weight:400;
+  font-size:clamp(2.6rem,9vw,5.4rem);
+  letter-spacing:.06em;
+  line-height:1.15;
+  text-shadow:0 0 30px var(--pen-glow);
+  transition:text-shadow .6s;
+}
+h1 .accent{color:var(--pen);transition:color .4s}
+.tagline{
+  margin-top:20px;font-size:clamp(.95rem,2.6vw,1.15rem);
+  color:var(--ink-dim);
+}
+.tagline b{color:var(--ink);font-weight:500}
+
+/* 推し色スイッチャー */
+.penlight{
+  margin-top:48px;
+  display:flex;flex-direction:column;align-items:center;gap:12px;
+}
+.penlight p{
+  font-family:"JetBrains Mono",monospace;
+  font-size:.72rem;letter-spacing:.2em;color:var(--ink-dim);
+}
+.colors{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
+.colors button{
+  width:34px;height:34px;border-radius:50%;
+  border:2px solid transparent;cursor:pointer;
+  transition:transform .15s, box-shadow .2s;
+}
+.colors button:hover{transform:translateY(-3px)}
+.colors button[aria-pressed="true"]{
+  border-color:#fff;
+  box-shadow:0 0 16px currentColor;
+}
+.scroll-hint{
+  position:absolute;bottom:26px;left:50%;transform:translateX(-50%);
+  font-family:"JetBrains Mono",monospace;font-size:.7rem;
+  letter-spacing:.3em;color:var(--ink-dim);
+  animation:hint 2.4s ease-in-out infinite;
+}
+@keyframes hint{0%,100%{opacity:.4}50%{opacity:1}}
+
+/* ===== セクション共通 ===== */
+section{
+  max-width:920px;margin:0 auto;
+  padding:90px 24px;
+}
+.sec-label{
+  font-family:"JetBrains Mono",monospace;
+  font-size:.75rem;letter-spacing:.3em;
+  color:var(--pen);margin-bottom:10px;
+  transition:color .4s;
+}
+h2{
+  font-family:"DotGothic16",sans-serif;font-weight:400;
+  font-size:clamp(1.7rem,5vw,2.4rem);
+  margin-bottom:34px;letter-spacing:.05em;
+}
+.card{
+  background:var(--stage-2);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:28px 30px;
+  backdrop-filter:blur(6px);
+}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+.reveal.on{opacity:1;transform:none}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:8px}
+.fact{
+  border-left:3px solid var(--pen);
+  padding:6px 0 6px 16px;
+  transition:border-color .4s;
+}
+.fact dt{font-size:.75rem;color:var(--ink-dim);letter-spacing:.1em;font-family:"JetBrains Mono",monospace}
+.fact dd{font-size:1.02rem;font-weight:500}
+
+/* WORK：セットリスト形式 */
+.setlist{list-style:none;counter-reset:track}
+.setlist li{
+  counter-increment:track;
+  display:flex;align-items:baseline;gap:18px;
+  padding:16px 6px;border-bottom:1px dashed var(--line);
+}
+.setlist li::before{
+  content:"M" counter(track);
+  font-family:"JetBrains Mono",monospace;
+  font-size:.8rem;color:var(--gold);
+  min-width:2.4em;
+}
+.setlist .t{font-weight:700;font-size:1.05rem}
+.setlist .d{color:var(--ink-dim);font-size:.9rem}
+.encore{
+  margin-top:14px;padding:14px 18px;
+  border:1px dashed var(--gold);border-radius:var(--radius);
+  color:var(--gold);font-size:.9rem;
+  font-family:"JetBrains Mono",monospace;letter-spacing:.05em;
+}
+
+/* AI */
+.terminal{
+  font-family:"JetBrains Mono",monospace;
+  background:#080a12;border:1px solid var(--line);
+  border-radius:var(--radius);padding:22px 24px;
+  font-size:.85rem;line-height:2;
+  overflow-x:auto;
+}
+.terminal .p{color:var(--pen);transition:color .4s}
+.terminal .c{color:var(--ink-dim)}
+.ai-notes{margin-top:20px;display:grid;gap:14px}
+.ai-notes .card{padding:18px 22px}
+.ai-notes h3{font-size:1rem;margin-bottom:4px}
+.ai-notes p{font-size:.9rem;color:var(--ink-dim)}
+.news-updated{
+  font-family:"JetBrains Mono",monospace;font-size:.7rem;
+  color:var(--ink-dim);font-weight:400;margin-left:8px;
+}
+.news-list{list-style:none;margin-top:10px}
+.news-list li{padding:9px 0;border-bottom:1px dashed var(--line);font-size:.9rem}
+.news-list li:last-child{border-bottom:none}
+.news-list a{color:var(--ink);text-decoration:none;transition:color .2s}
+.news-list a:hover,.news-list a:focus-visible{color:var(--pen)}
+.news-list .src{
+  font-family:"JetBrains Mono",monospace;font-size:.72rem;
+  color:var(--gold);margin-right:10px;
+}
+.news-loading{color:var(--ink-dim)}
+.news-note{font-size:.75rem !important;margin-top:10px}
+
+/* 推し活 */
+.oshi-rules{display:grid;gap:0;margin-top:8px}
+.oshi-rules .card{border-radius:0;border-bottom:none}
+.oshi-rules .card:first-child{border-radius:var(--radius) var(--radius) 0 0}
+.oshi-rules .card:last-child{border-radius:0 0 var(--radius) var(--radius);border-bottom:1px solid var(--line)}
+.oshi-rules h3{font-size:1rem;display:flex;align-items:center;gap:10px}
+.oshi-rules h3::before{
+  content:"";width:10px;height:10px;border-radius:50%;
+  background:var(--pen);box-shadow:0 0 10px var(--pen-glow);
+  transition:background .4s, box-shadow .4s;
+}
+.oshi-rules p{font-size:.9rem;color:var(--ink-dim);margin-top:6px}
+
+/* CONTACT */
+.contact{text-align:center}
+.contact .card{display:inline-block;text-align:left;max-width:560px}
+.contact ul{list-style:none;margin-top:12px}
+.contact li{
+  font-family:"JetBrains Mono",monospace;font-size:.9rem;
+  padding:8px 0;border-bottom:1px dashed var(--line);
+}
+.contact li:last-child{border-bottom:none}
+.contact li span{color:var(--pen);margin-right:12px;transition:color .4s}
+
+footer{
+  text-align:center;padding:50px 20px 60px;
+  color:var(--ink-dim);font-size:.78rem;
+  font-family:"JetBrains Mono",monospace;letter-spacing:.15em;
+  border-top:1px solid var(--line);
+}
+footer b{color:var(--gold);font-weight:400}
+
+@media(max-width:640px){
+  nav{display:none}
+  .about-grid{grid-template-columns:1fr}
+  section{padding:70px 20px}
+}
+@media(prefers-reduced-motion:reduce){
+  .dot{animation:none}
+  .scroll-hint{animation:none}
+  .reveal{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<div id="sea" aria-hidden="true"></div>
+
+<header>
+  <a class="logo" href="#top">INAGUMA<span>.</span>dev</a>
+  <nav aria-label="ページ内リンク">
+    <a href="#about">ABOUT</a>
+    <a href="#work">WORK</a>
+    <a href="#ai">AI</a>
+    <a href="#oshi">推し活</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- 開演 -->
+  <div class="hero">
+    <p class="eyebrow">NAGOYA / SYSTEM ENGINEER / SINCE 20XX</p>
+    <h1>いなぐま<br><span class="accent">開演。</span></h1>
+    <p class="tagline">
+      名古屋のシステムエンジニア。<b>開発と運用保守</b>で現場を守り、<br>
+      <b>AI</b>で仕事を変え、<b>推し</b>に人生を照らされている独身。
+    </p>
+
+    <div class="penlight">
+      <p>▼ あなたの推し色でこのページを照らしてください ▼</p>
+      <div class="colors" role="group" aria-label="推し色を選ぶ">
+        <button style="background:#ff5aa7;color:#ff5aa7" data-c="#ff5aa7" aria-pressed="true" aria-label="ピンク"></button>
+        <button style="background:#4dc9ff;color:#4dc9ff" data-c="#4dc9ff" aria-pressed="false" aria-label="水色"></button>
+        <button style="background:#ff4747;color:#ff4747" data-c="#ff4747" aria-pressed="false" aria-label="赤"></button>
+        <button style="background:#7dff6e;color:#7dff6e" data-c="#7dff6e" aria-pressed="false" aria-label="緑"></button>
+        <button style="background:#c07bff;color:#c07bff" data-c="#c07bff" aria-pressed="false" aria-label="紫"></button>
+        <button style="background:#ffd447;color:#ffd447" data-c="#ffd447" aria-pressed="false" aria-label="黄"></button>
+        <button style="background:#ffffff;color:#ffffff" data-c="#ffffff" aria-pressed="false" aria-label="白"></button>
+      </div>
+    </div>
+
+    <p class="scroll-hint">SCROLL TO ENTER</p>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about" class="reveal">
+    <p class="sec-label">01 — PROFILE</p>
+    <h2>自己紹介</h2>
+    <div class="card">
+      <p>
+        名古屋を拠点に働くシステムエンジニアです。システム開発から運用保守まで、
+        「作って終わり」ではなく「動かし続ける」ことに責任を持つ仕事をしています。
+        障害対応で鍛えられた冷静さと、推し活で鍛えられた瞬発力が武器です。
+      </p>
+      <dl class="about-grid" style="margin-top:22px">
+        <div class="fact"><dt>BASE</dt><dd>愛知県名古屋市</dd></div>
+        <div class="fact"><dt>JOB</dt><dd>システム開発・運用保守</dd></div>
+        <div class="fact"><dt>INTERESTS</dt><dd>AI活用 / アイドル</dd></div>
+        <div class="fact"><dt>STATUS</dt><dd>独身（推しはいます）</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- WORK：セットリスト -->
+  <section id="work" class="reveal">
+    <p class="sec-label">02 — SETLIST</p>
+    <h2>仕事のセットリスト</h2>
+    <div class="card">
+      <ol class="setlist">
+        <li>
+          <div>
+            <div class="t">システム運用・保守</div>
+            <div class="d">安定稼働がすべての土台。監視、メンテナンス、障害対応の一次から報告書まで。</div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div class="t">システム開発</div>
+            <div class="d">要件定義から設計・実装・テストまで。ドキュメントを軽視しない派です。</div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div class="t">障害対応・報告</div>
+            <div class="d">直接原因と根本原因を切り分け、影響範囲を明確に。再発防止まで見届ける。</div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div class="t">コードレビュー</div>
+            <div class="d">プルリクの背景調査からレビュー観点の整理まで。品質は現場の平和。</div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div class="t">チームリード</div>
+            <div class="d">メンバーの育成とワークロード調整。チームの推し事は、チームを推すこと。</div>
+          </div>
+        </li>
+      </ol>
+      <p class="encore">EN. AIによる業務効率化 — アンコールは毎日やっています</p>
+    </div>
+  </section>
+
+  <!-- AI -->
+  <section id="ai" class="reveal">
+    <p class="sec-label">03 — AI LAB</p>
+    <h2>AIとの日々</h2>
+    <div class="terminal" aria-label="ターミナル風の自己紹介">
+      <div><span class="p">inaguma@nagoya</span>:~$ cat ai_activity.log</div>
+      <div><span class="c"># レビュー工数をAIで削減する仕組みを構築中</span></div>
+      <div><span class="c"># プロンプトは書いて終わりではなく、継続改善する運用へ</span></div>
+      <div><span class="c"># 自宅ではAI学習用マシンを整備し、画像整理ツールなどを自作</span></div>
+      <div><span class="p">inaguma@nagoya</span>:~$ echo "AIは仕事を奪わない。定時を返してくれる。"</div>
+      <div>AIは仕事を奪わない。定時を返してくれる。</div>
+    </div>
+    <div class="ai-notes">
+      <div class="card">
+        <h3>業務 × AI</h3>
+        <p>レビュープロセスの改善、報告書テンプレートの整備など、「毎日の面倒」をAIで小さく削り続けています。</p>
+      </div>
+      <div class="card">
+        <h3>趣味 × AI</h3>
+        <p>画像の自動リネームツールを自作するなど、家でも手を動かして学ぶスタイル。作ったものはこのサイトで公開予定。</p>
+      </div>
+      <div class="card news-card">
+        <h3>今週のAI NEWS <span class="news-updated" id="news-updated"></span></h3>
+        <ul class="news-list" id="news-list">
+          <li class="news-loading">読み込み中…</li>
+        </ul>
+        <p class="news-note">※ 毎週自動更新（GitHub Actions）</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 推し活 -->
+  <section id="oshi" class="reveal">
+    <p class="sec-label">04 — OSHI</p>
+    <h2>推し活三箇条</h2>
+    <div class="oshi-rules">
+      <div class="card">
+        <h3>現場は最優先タスク</h3>
+        <p>ライブの日程が決まった瞬間、それはリリース日と同じ優先度でスケジュールに組み込まれます。</p>
+      </div>
+      <div class="card">
+        <h3>運用保守の心で推す</h3>
+        <p>一発の爆発力より、長く安定して応援し続けること。推し活も安定稼働が第一です。</p>
+      </div>
+      <div class="card">
+        <h3>ペンライトは正しく振る</h3>
+        <p>コールも振りも、仕様（現場のマナー）を守ってこそ。これはエンジニアの職業病かもしれません。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="reveal contact">
+    <p class="sec-label">05 — CONTACT</p>
+    <h2>連絡先</h2>
+    <div class="card">
+      <p>お仕事のご相談も、現場の情報交換も歓迎です。</p>
+      <ul>
+        <li><span>X</span>@your_account（差し替えてください）</li>
+        <li><span>GH</span>github.com/your-account</li>
+        <li><span>✉</span>your-mail@example.com</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2026 INAGUMA — Made in <b>NAGOYA</b> with AI &amp; ペンライト
+</footer>
+
+<script>
+// 客席のペンライトの海を生成
+(function(){
+  const sea = document.getElementById('sea');
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const n = Math.min(90, Math.floor(innerWidth/14));
+  for(let i=0;i<n;i++){
+    const d = document.createElement('div');
+    d.className = 'dot';
+    d.style.left = Math.random()*100 + 'vw';
+    d.style.bottom = (Math.random()*12 - 4) + 'px';
+    d.style.height = (10 + Math.random()*10) + 'px';
+    d.style.opacity = .3 + Math.random()*.7;
+    if(!reduce){
+      d.style.animationDuration = (2.4 + Math.random()*2.2) + 's';
+      d.style.animationDelay = (-Math.random()*3) + 's';
+    }
+    sea.appendChild(d);
+  }
+})();
+
+// 推し色スイッチャー
+(function(){
+  const root = document.documentElement;
+  const btns = document.querySelectorAll('.colors button');
+  function hexToRgb(h){
+    const v = h.replace('#','');
+    return [parseInt(v.slice(0,2),16),parseInt(v.slice(2,4),16),parseInt(v.slice(4,6),16)];
+  }
+  btns.forEach(b=>{
+    b.addEventListener('click',()=>{
+      const c = b.dataset.c;
+      const [r,g,bl] = hexToRgb(c);
+      root.style.setProperty('--pen', c);
+      root.style.setProperty('--pen-soft', `rgba(${r},${g},${bl},.18)`);
+      root.style.setProperty('--pen-glow', `rgba(${r},${g},${bl},.45)`);
+      btns.forEach(x=>x.setAttribute('aria-pressed', x===b ? 'true':'false'));
+    });
+  });
+})();
+
+// 今週のAI NEWS：news.json を読み込んで表示
+(function(){
+  const list = document.getElementById('news-list');
+  const updated = document.getElementById('news-updated');
+  const fallback = [
+    {title:"Anthropic News（公式）", link:"https://www.anthropic.com/news", source:"Anthropic"},
+    {title:"OpenAI News（公式）", link:"https://openai.com/news/", source:"OpenAI"},
+    {title:"Google DeepMind Blog", link:"https://deepmind.google/discover/blog/", source:"DeepMind"},
+    {title:"ITmedia AI+", link:"https://www.itmedia.co.jp/aiplus/", source:"ITmedia"}
+  ];
+  function render(items, when){
+    list.innerHTML = '';
+    items.slice(0,8).forEach(n=>{
+      const li = document.createElement('li');
+      const src = document.createElement('span');
+      src.className = 'src';
+      src.textContent = n.source || 'NEWS';
+      const a = document.createElement('a');
+      a.href = n.link;
+      a.target = '_blank';
+      a.rel = 'noopener noreferrer';
+      a.textContent = n.title;
+      li.appendChild(src);
+      li.appendChild(a);
+      list.appendChild(li);
+    });
+    if(when) updated.textContent = '(' + when + ' 更新)';
+  }
+  fetch('news.json', {cache:'no-cache'})
+    .then(r => { if(!r.ok) throw new Error(); return r.json(); })
+    .then(d => render(d.items || [], d.updated))
+    .catch(() => render(fallback, null));
+})();
+
+// スクロールで各セクションを照らす
+(function(){
+  const io = new IntersectionObserver(es=>{
+    es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('on'); io.unobserve(e.target);} });
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+})();
+</script>
+</body>
+</html>

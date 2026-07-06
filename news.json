@@ -1,20 +1,30 @@
 {
-  "updated": "2026-07-04",
+  "updated": "2026-07-06",
   "items": [
     {
-      "title": "米トランプ大統領、AI規制は「できるだけ介入少なく」 中国に対して開発競争「大幅リード」を強調",
-      "link": "https://www.itmedia.co.jp/aiplus/article/2607/04/2000000159/",
+      "title": "パランティアCEOがOpenAIやAnthropicを批判 「AIモデルを強化するためのデータをなぜ顧客が渡すのか」",
+      "link": "https://www.itmedia.co.jp/aiplus/article/2607/06/2000000161/",
       "source": "ITmedia AI+"
     },
     {
-      "title": "フィジカルAIに挑む日の丸連合、「Noetra」とは何か",
-      "link": "https://monoist.itmedia.co.jp/mn/articles/2607/04/news016.html",
+      "title": "「AIはもう十分賢い」 活用のボトルネックは「モデル性能」から「評価」へ 米データ基盤開発企業のAI研究者に聞く",
+      "link": "https://www.itmedia.co.jp/aiplus/article/2607/06/2000000160/",
       "source": "ITmedia AI+"
     },
     {
-      "title": "3万円で「Yahoo!ニュース」にPR掲載 プレスリリースをAIで「ニュース風記事」に",
-      "link": "https://www.itmedia.co.jp/news/articles/2607/03/news116.html",
+      "title": "目が不自由な人の歩行をAIが音声で支援、歩行補助デバイス開発へ",
+      "link": "https://monoist.itmedia.co.jp/mn/articles/2607/06/news086.html",
       "source": "ITmedia AI+"
+    },
+    {
+      "title": "プログラミングのためのBGMや環境音など。仕事や勉強の邪魔にならない無料で使えそうな音源集。2026年版",
+      "link": "https://www.publickey1.jp/blog/26/bgm2026.html",
+      "source": "Publickey"
+    },
+    {
+      "title": "ブロードコムによるVMware製品抱き合わせ販売疑惑、独占禁止法違反と認定されず。公正取引委員会が調査を終了",
+      "link": "https://www.publickey1.jp/blog/26/vmware_9.html",
+      "source": "Publickey"
     },
     {
       "title": "UNIX系コマンドをWindowsに移植／macOS上にLinuxコンテナを統合／Ubuntu、開発環境をコマンド一発で構築ほか、2026年6月の人気記事",
@@ -22,23 +32,13 @@
       "source": "Publickey"
     },
     {
-      "title": "DNSを基盤にAIエージェントに信頼できる名前を与える「Agent Name Service（ANS）」、立ち上げ意向をLinux Foundationが発表",
-      "link": "https://www.publickey1.jp/blog/26/dnsaiagent_name_serviceanslinux_foundation.html",
-      "source": "Publickey"
-    },
-    {
-      "title": "静的サイトジェネレータ「Astro 7.0」正式リリース、ビルドシステムがVite 8/Rolldownに、Rust製コンパイラ採用で高速化",
-      "link": "https://www.publickey1.jp/blog/26/astro_70vite_8rolldownrust.html",
-      "source": "Publickey"
-    },
-    {
-      "title": "「生成AI」の進化で賞やコンテストはどうなる？（2）小説編【調査情報デジタル】 - TBS NEWS DIG",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFA2TktySGkwb3lQdEJFSVJBWjdYN0xpYXFzNVd5bTlNcktwMENQZ0VWNGpLRHAyQnRabnA5TmRNSnFOR09nLVBZRzdvX1lMek1YTWlaMVYyVQ?oc=5",
+      "title": "無料の画像生成AI「Krea 2」が話題 実写もアニメもこなす新勢力 (1/4) - ASCII.jp",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBvZGlHSF9OVVRLdU9oTkFjYVhvRnVqT0U4R2pMRm9kdlpzRHp4YW9UVE9EZTdtbVVOdUpkaDRzSXIxZndwRG4xT01fYnUxblBUS1dDQw?oc=5",
       "source": "Google News"
     },
     {
-      "title": "生成AIツール「業務で活用」個人の6割 「簡易的な業務にしか使えていない」課題も - 産経ニュース",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9qRkQwd1V1b1NBQy1iWHFCWDZrdWdJZGFUQ09EZGhWcUpvc0RnSzZ4QXlfSFpTTjdsdzNxNUtlNmlxQzZpcXdTNFZzNENXRGNla3ltTE9vNk1SVnlXZmUzSEoyZHdkZ25TbThObFNrc291Nk81X0E?oc=5",
+      "title": "画像生成AIを開発するMidjourneyが係争中のハリウッドの映画スタジオに対してAIの利用状況の詳細を明らかにするよう要求 - GIGAZINE",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBUeTU2OUE1ek8xb3RpU3Y3MDBWTUwyMU0xVXBHRHBFeHU1V2pjcFhMTE5tSEdfNVdkT2lIT004ME5SRk5FMkNHSG44a2l5YnFGWWlvbC1UckFCYlVVNDhRUGJIUlVEajhRc3NoSUVUQXgzQVd2SjVqeElFSGlfdw?oc=5",
       "source": "Google News"
     }
   ]

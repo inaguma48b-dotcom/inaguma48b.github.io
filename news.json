@@ -1,44 +1,44 @@
 {
-  "updated": "2026-07-06",
+  "updated": "2026-07-08",
   "items": [
     {
-      "title": "パランティアCEOがOpenAIやAnthropicを批判 「AIモデルを強化するためのデータをなぜ顧客が渡すのか」",
-      "link": "https://www.itmedia.co.jp/aiplus/article/2607/06/2000000161/",
+      "title": "Meta、初のエージェント型画像生成AI「Muse Image」公開 動画生成AI「Muse Video」もプレビュー",
+      "link": "https://www.itmedia.co.jp/aiplus/article/2607/08/2000000169/",
       "source": "ITmedia AI+"
     },
     {
-      "title": "「AIはもう十分賢い」 活用のボトルネックは「モデル性能」から「評価」へ 米データ基盤開発企業のAI研究者に聞く",
-      "link": "https://www.itmedia.co.jp/aiplus/article/2607/06/2000000160/",
+      "title": "NTTドコモビジネスがIOWN活用の分散GPU環境を提供、25GBを2秒で転送",
+      "link": "https://monoist.itmedia.co.jp/mn/articles/2607/08/news052.html",
       "source": "ITmedia AI+"
     },
     {
-      "title": "目が不自由な人の歩行をAIが音声で支援、歩行補助デバイス開発へ",
-      "link": "https://monoist.itmedia.co.jp/mn/articles/2607/06/news086.html",
+      "title": "IT予算の9割が人件費に消える――日本オラクル社長が切り込む「企業最大の課題」",
+      "link": "https://www.itmedia.co.jp/business/articles/2607/08/news044.html",
       "source": "ITmedia AI+"
     },
     {
-      "title": "プログラミングのためのBGMや環境音など。仕事や勉強の邪魔にならない無料で使えそうな音源集。2026年版",
-      "link": "https://www.publickey1.jp/blog/26/bgm2026.html",
+      "title": "Visual Studio Code、従量課金制になったGitHub Copilotの使用料を表示可能に（訂正あり）",
+      "link": "https://www.publickey1.jp/blog/26/visual_studio_codegithub_copilot.html",
       "source": "Publickey"
     },
     {
-      "title": "ブロードコムによるVMware製品抱き合わせ販売疑惑、独占禁止法違反と認定されず。公正取引委員会が調査を終了",
-      "link": "https://www.publickey1.jp/blog/26/vmware_9.html",
+      "title": "Apple、次期macOS 27でSwift言語をシステムカーネル開発に採用。メモリ安全な言語として",
+      "link": "https://www.publickey1.jp/blog/26/applemacos_27swift.html",
       "source": "Publickey"
     },
     {
-      "title": "UNIX系コマンドをWindowsに移植／macOS上にLinuxコンテナを統合／Ubuntu、開発環境をコマンド一発で構築ほか、2026年6月の人気記事",
-      "link": "https://www.publickey1.jp/blog/26/unixwindowsmacoslinuxubuntu20266.html",
+      "title": "MCPにエンタープライズ向け新機能、アクセスを一括管理できる「Enterprise-Managed Authorization（EMA）extension」が安定版として利用可能に",
+      "link": "https://www.publickey1.jp/blog/26/mcpenterprise-managed_authorizationemaextension.html",
       "source": "Publickey"
     },
     {
-      "title": "無料の画像生成AI「Krea 2」が話題 実写もアニメもこなす新勢力 (1/4) - ASCII.jp",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBvZGlHSF9OVVRLdU9oTkFjYVhvRnVqT0U4R2pMRm9kdlpzRHp4YW9UVE9EZTdtbVVOdUpkaDRzSXIxZndwRG4xT01fYnUxblBUS1dDQw?oc=5",
+      "title": "「ChatGPTがサイバー攻撃」はミスリード。バンダイチャンネル事件で少年が使った生成AIの役割とは #エキスパートトピ - Yahoo!ニュース",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNcmYtTHp1dkFTQUwxb04wMW9xMXNoUjV1a28tdFQwLW9JYnhGelFDWm1jRTFBZk5QTTdxemtUZkZjbnNJeUZNalNDRkpIUFJrcXd4Y1NlclhsTGJyTUtCYkhTVlVnX1hSbVRnNkhHbjZ1T2dIMm5MR0tFNXdFdnZkcjdmazhxVWUz?oc=5",
       "source": "Google News"
     },
     {
-      "title": "画像生成AIを開発するMidjourneyが係争中のハリウッドの映画スタジオに対してAIの利用状況の詳細を明らかにするよう要求 - GIGAZINE",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBUeTU2OUE1ek8xb3RpU3Y3MDBWTUwyMU0xVXBHRHBFeHU1V2pjcFhMTE5tSEdfNVdkT2lIT004ME5SRk5FMkNHSG44a2l5YnFGWWlvbC1UckFCYlVVNDhRUGJIUlVEajhRc3NoSUVUQXgzQVd2SjVqeElFSGlfdw?oc=5",
+      "title": "【速報】「バンダイチャンネル」にサイバー攻撃か 少年（15）逮捕 生成AI「ChatGPT」でプログラム作成 会員を退会処理し全サービスを一時的に停止に 警視庁 - TBS NEWS DIG",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBTSFZySzZUTFBSNDFmUzdrdElpQmlIdVZBNTdwX0xlWlVXX0FZR0VFZE56cHVPRXByUURvZk5UeTNvdkJhY3NheVJmUmdyb0tsWklLcWFKVQ?oc=5",
       "source": "Google News"
     }
   ]

@@ -1,44 +1,44 @@
 {
-  "updated": "2026-07-08",
+  "updated": "2026-07-11",
   "items": [
     {
-      "title": "Meta、初のエージェント型画像生成AI「Muse Image」公開 動画生成AI「Muse Video」もプレビュー",
-      "link": "https://www.itmedia.co.jp/aiplus/article/2607/08/2000000169/",
+      "title": "テスラ車内で「Grok」と会話、日本でも展開へ ナビ設定やルート確認を音声で",
+      "link": "https://www.itmedia.co.jp/news/articles/2607/10/news157.html",
       "source": "ITmedia AI+"
     },
     {
-      "title": "NTTドコモビジネスがIOWN活用の分散GPU環境を提供、25GBを2秒で転送",
-      "link": "https://monoist.itmedia.co.jp/mn/articles/2607/08/news052.html",
+      "title": "「まるで人間」 OpenAIの新モデル「GPT-Live」のトーク力が話題 間を空けずに考えながら会話できる",
+      "link": "https://www.itmedia.co.jp/news/articles/2607/10/news114.html",
       "source": "ITmedia AI+"
     },
     {
-      "title": "IT予算の9割が人件費に消える――日本オラクル社長が切り込む「企業最大の課題」",
-      "link": "https://www.itmedia.co.jp/business/articles/2607/08/news044.html",
+      "title": "M365 CopilotにOpenAI最新モデル「GPT-5.6」追加 複雑な作業を「より効率的に処理」",
+      "link": "https://www.itmedia.co.jp/aiplus/article/2607/10/2000000184/",
       "source": "ITmedia AI+"
     },
     {
-      "title": "Visual Studio Code、従量課金制になったGitHub Copilotの使用料を表示可能に（訂正あり）",
-      "link": "https://www.publickey1.jp/blog/26/visual_studio_codegithub_copilot.html",
+      "title": "JavaScriptランタイムのBun、Claude Fable 5を11日間稼働させてZigからRustへの移植を実現。Claudeをどう使ったのか？",
+      "link": "https://www.publickey1.jp/blog/26/javascriptbunclaude_fable_511zigrustclaude.html",
       "source": "Publickey"
     },
     {
-      "title": "Apple、次期macOS 27でSwift言語をシステムカーネル開発に採用。メモリ安全な言語として",
-      "link": "https://www.publickey1.jp/blog/26/applemacos_27swift.html",
+      "title": "PostgreSQLをクラスタ化した分散DBでスケーリングと高可用性を実現する「Multigres v0.1」アルファ版が登場",
+      "link": "https://www.publickey1.jp/blog/26/postgresqldbmultigres_v01.html",
       "source": "Publickey"
     },
     {
-      "title": "MCPにエンタープライズ向け新機能、アクセスを一括管理できる「Enterprise-Managed Authorization（EMA）extension」が安定版として利用可能に",
-      "link": "https://www.publickey1.jp/blog/26/mcpenterprise-managed_authorizationemaextension.html",
+      "title": "PostgreSQL 19ベータ版が登場。I/Oワーカーの自動スケール、Autovacuumの改善など新機能",
+      "link": "https://www.publickey1.jp/blog/26/postgresql_19ioautovacuum.html",
       "source": "Publickey"
     },
     {
-      "title": "「ChatGPTがサイバー攻撃」はミスリード。バンダイチャンネル事件で少年が使った生成AIの役割とは #エキスパートトピ - Yahoo!ニュース",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNcmYtTHp1dkFTQUwxb04wMW9xMXNoUjV1a28tdFQwLW9JYnhGelFDWm1jRTFBZk5QTTdxemtUZkZjbnNJeUZNalNDRkpIUFJrcXd4Y1NlclhsTGJyTUtCYkhTVlVnX1hSbVRnNkhHbjZ1T2dIMm5MR0tFNXdFdnZkcjdmazhxVWUz?oc=5",
+      "title": "Instagramの投稿を第三者が無断でAI合成 Meta社の画像生成AIにハリウッドが反発、事前承諾方式への変更を要求 - Yahoo!ニュース",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9VZ3JZeHZGUW82TFIzRExNQnNiOUM4S2VnZ09lMmZRZUpTQ21RdXRld1UyR3BYVUtYMkFMeGI2WlNPT0dWSGpvRGZFTVJ3VlZscWphNzhQMFNtbnkyX3RFeE92ajd2dTV3OS0xb0dWWWNDSEtWNjJ5ZFhLdEJGLW8?oc=5",
       "source": "Google News"
     },
     {
-      "title": "【速報】「バンダイチャンネル」にサイバー攻撃か 少年（15）逮捕 生成AI「ChatGPT」でプログラム作成 会員を退会処理し全サービスを一時的に停止に 警視庁 - TBS NEWS DIG",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBTSFZySzZUTFBSNDFmUzdrdElpQmlIdVZBNTdwX0xlWlVXX0FZR0VFZE56cHVPRXByUURvZk5UeTNvdkJhY3NheVJmUmdyb0tsWklLcWFKVQ?oc=5",
+      "title": "Claude Opus 4.7に匹敵するコーディングAI「Ornith-1.0」、NVIDIAが「Qwen3.6」を軽量化4ビットモデルを商用利用可能で公開など生成AI技術5つを解説（生成AIウィークリー） - テクノエッジ TechnoEdge",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1POGVTSmdvcTJwbTBha0h3TEd5MzlITWhNc2tNcHZmX1F2ZHc3aVc4VVRwdWcyTlJPOWg5d3ZueUVJOFhTa3I4VldOUmEzZDR5WFFtdVFHUkdWXzZFNkJuY0FJUldWR0k?oc=5",
       "source": "Google News"
     }
   ]

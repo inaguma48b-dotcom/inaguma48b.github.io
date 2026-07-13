@@ -1,20 +1,30 @@
 {
-  "updated": "2026-07-11",
+  "updated": "2026-07-13",
   "items": [
     {
-      "title": "テスラ車内で「Grok」と会話、日本でも展開へ ナビ設定やルート確認を音声で",
-      "link": "https://www.itmedia.co.jp/news/articles/2607/10/news157.html",
+      "title": "OpenAIのブラウザ「ChatGPT Atlas」終了へ 公開から1年足らずで",
+      "link": "https://www.itmedia.co.jp/news/articles/2607/13/news090.html",
       "source": "ITmedia AI+"
     },
     {
-      "title": "「まるで人間」 OpenAIの新モデル「GPT-Live」のトーク力が話題 間を空けずに考えながら会話できる",
-      "link": "https://www.itmedia.co.jp/news/articles/2607/10/news114.html",
+      "title": "GMOグループ、AI時代に「エンジニア含む組織体制見直し」 熊谷代表が「AI変革最高責任者」に",
+      "link": "https://www.itmedia.co.jp/news/articles/2607/13/news093.html",
       "source": "ITmedia AI+"
     },
     {
-      "title": "M365 CopilotにOpenAI最新モデル「GPT-5.6」追加 複雑な作業を「より効率的に処理」",
-      "link": "https://www.itmedia.co.jp/aiplus/article/2607/10/2000000184/",
+      "title": "Claude、利用制限を全リセット 競合「GPT-5.6」公開と同日……OpenAI幹部「ビビってるね」",
+      "link": "https://www.itmedia.co.jp/aiplus/article/2607/10/2000000179/",
       "source": "ITmedia AI+"
+    },
+    {
+      "title": "IT系上場企業の平均年収を業種別にみてみた 2026年版［後編］ ～ ソフトウェア／サービス系、SI／システム開発系、クラウド／通信キャリア系企業",
+      "link": "https://www.publickey1.jp/blog/26/it_2026_si.html",
+      "source": "Publickey"
+    },
+    {
+      "title": "IT系上場企業の平均年収を業種別にみてみた 2026年版［前編］ ～ ネットベンチャー、ゲーム、メディア系",
+      "link": "https://www.publickey1.jp/blog/26/it_2026_1.html",
+      "source": "Publickey"
     },
     {
       "title": "JavaScriptランタイムのBun、Claude Fable 5を11日間稼働させてZigからRustへの移植を実現。Claudeをどう使ったのか？",
@@ -22,23 +32,13 @@
       "source": "Publickey"
     },
     {
-      "title": "PostgreSQLをクラスタ化した分散DBでスケーリングと高可用性を実現する「Multigres v0.1」アルファ版が登場",
-      "link": "https://www.publickey1.jp/blog/26/postgresqldbmultigres_v01.html",
-      "source": "Publickey"
-    },
-    {
-      "title": "PostgreSQL 19ベータ版が登場。I/Oワーカーの自動スケール、Autovacuumの改善など新機能",
-      "link": "https://www.publickey1.jp/blog/26/postgresql_19ioautovacuum.html",
-      "source": "Publickey"
-    },
-    {
-      "title": "Instagramの投稿を第三者が無断でAI合成 Meta社の画像生成AIにハリウッドが反発、事前承諾方式への変更を要求 - Yahoo!ニュース",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9VZ3JZeHZGUW82TFIzRExNQnNiOUM4S2VnZ09lMmZRZUpTQ21RdXRld1UyR3BYVUtYMkFMeGI2WlNPT0dWSGpvRGZFTVJ3VlZscWphNzhQMFNtbnkyX3RFeE92ajd2dTV3OS0xb0dWWWNDSEtWNjJ5ZFhLdEJGLW8?oc=5",
+      "title": "アニメ特化動画生成AI「AnimeGen」無償公開、商用利用も可 国内AIベンチャーAIdeaLab（1/2 ページ） - ITmedia",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5wYXdaYTJCWEc2ZVhDODRWaGJfMG1xVmhhMlRsYUNnTTZ0REJadldjdUVuaDhPOFNXSkxaeEttRGpKbG9QU3Fnc09CMk1nR2FyR3k4YS1uY25vY0FLQUJZWEs3c2FqaDZ4cEp1RA?oc=5",
       "source": "Google News"
     },
     {
-      "title": "Claude Opus 4.7に匹敵するコーディングAI「Ornith-1.0」、NVIDIAが「Qwen3.6」を軽量化4ビットモデルを商用利用可能で公開など生成AI技術5つを解説（生成AIウィークリー） - テクノエッジ TechnoEdge",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1POGVTSmdvcTJwbTBha0h3TEd5MzlITWhNc2tNcHZmX1F2ZHc3aVc4VVRwdWcyTlJPOWg5d3ZueUVJOFhTa3I4VldOUmEzZDR5WFFtdVFHUkdWXzZFNkJuY0FJUldWR0k?oc=5",
+      "title": "アニメ特化動画生成AIモデル『AnimeGen』を公開 - PR TIMES",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1GeDA2c3FuZTJIdy1ZTm5rclFnNXJfZ1ZyUFBmRml4TVIyeDhYQXhob1JnOFF0bTMwMkwzWjlKXzNCQWo1bTE4NngwTkk1VHRlRXlXSC1KcENxbWw5RkFEZUFoZTVyM3RoaGc?oc=5",
       "source": "Google News"
     }
   ]

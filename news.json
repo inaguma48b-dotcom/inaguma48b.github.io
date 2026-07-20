@@ -1,44 +1,44 @@
 {
-  "updated": "2026-07-13",
+  "updated": "2026-07-20",
   "items": [
     {
-      "title": "OpenAIのブラウザ「ChatGPT Atlas」終了へ 公開から1年足らずで",
-      "link": "https://www.itmedia.co.jp/news/articles/2607/13/news090.html",
+      "title": "Hugging FaceにAI主導のサイバー攻撃 防御もAIで対抗するも、商用モデルは解析拒否で「GLM」採用",
+      "link": "https://www.itmedia.co.jp/news/articles/2607/20/news010.html",
       "source": "ITmedia AI+"
     },
     {
-      "title": "GMOグループ、AI時代に「エンジニア含む組織体制見直し」 熊谷代表が「AI変革最高責任者」に",
-      "link": "https://www.itmedia.co.jp/news/articles/2607/13/news093.html",
+      "title": "「スマホで動く」270億パラメーターLLM「Bonsai 27B」登場",
+      "link": "https://www.itmedia.co.jp/aiplus/article/2607/17/2000000202/",
       "source": "ITmedia AI+"
     },
     {
-      "title": "Claude、利用制限を全リセット 競合「GPT-5.6」公開と同日……OpenAI幹部「ビビってるね」",
-      "link": "https://www.itmedia.co.jp/aiplus/article/2607/10/2000000179/",
+      "title": "「Claude Fable 5」サブスクに統合 Max・Team Premiumプラン対象",
+      "link": "https://www.itmedia.co.jp/news/articles/2607/18/news019.html",
       "source": "ITmedia AI+"
     },
     {
-      "title": "IT系上場企業の平均年収を業種別にみてみた 2026年版［後編］ ～ ソフトウェア／サービス系、SI／システム開発系、クラウド／通信キャリア系企業",
-      "link": "https://www.publickey1.jp/blog/26/it_2026_si.html",
+      "title": ".NET 8と.NET 9は今年の11月でサポート終了、マイクロソフトが警告",
+      "link": "https://www.publickey1.jp/blog/26/net_8net_911.html",
       "source": "Publickey"
     },
     {
-      "title": "IT系上場企業の平均年収を業種別にみてみた 2026年版［前編］ ～ ネットベンチャー、ゲーム、メディア系",
-      "link": "https://www.publickey1.jp/blog/26/it_2026_1.html",
+      "title": "フロントエンド開発に必要なツールをまとめて統合した「Vite+」、ベータ公開",
+      "link": "https://www.publickey1.jp/blog/26/vite.html",
       "source": "Publickey"
     },
     {
-      "title": "JavaScriptランタイムのBun、Claude Fable 5を11日間稼働させてZigからRustへの移植を実現。Claudeをどう使ったのか？",
-      "link": "https://www.publickey1.jp/blog/26/javascriptbunclaude_fable_511zigrustclaude.html",
+      "title": "リアルタイム共同編集が可能なJavaScriptの表計算コンポーネント、メシウスが「SpreadJS」の新バージョンをリリース",
+      "link": "https://www.publickey1.jp/blog/26/javascriptspreadjs.html",
       "source": "Publickey"
     },
     {
-      "title": "アニメ特化動画生成AI「AnimeGen」無償公開、商用利用も可 国内AIベンチャーAIdeaLab（1/2 ページ） - ITmedia",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5wYXdaYTJCWEc2ZVhDODRWaGJfMG1xVmhhMlRsYUNnTTZ0REJadldjdUVuaDhPOFNXSkxaeEttRGpKbG9QU3Fnc09CMk1nR2FyR3k4YS1uY25vY0FLQUJZWEs3c2FqaDZ4cEp1RA?oc=5",
+      "title": "Netflix「今年配信の約300作品で生成AI活用」 制作は2倍速で制作費は半額の実例も - ITmedia",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0yekt5aHpybnVKZFNkaEhYRDdXcFF2eUJsTkx5QW9vY29YNHdsQmpPWnliSDlmX19JU3lxLVRSRWVqSFFUOUQyYkV0V2w2czdKcW1GSzVxcTh2VDBjZWpEYW01ZVdhc2hoN0JWMQ?oc=5",
       "source": "Google News"
     },
     {
-      "title": "アニメ特化動画生成AIモデル『AnimeGen』を公開 - PR TIMES",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1GeDA2c3FuZTJIdy1ZTm5rclFnNXJfZ1ZyUFBmRml4TVIyeDhYQXhob1JnOFF0bTMwMkwzWjlKXzNCQWo1bTE4NngwTkk1VHRlRXlXSC1KcENxbWw5RkFEZUFoZTVyM3RoaGc?oc=5",
+      "title": "株式会社Shinker、生成AI・AIエージェント・AI検索時代の実務を支援する専門メディア「AI TREND研究所」を正式公開―AIO・LLMO・GEOからAIツール活用まで毎日発信― - at-s.com",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9XRXhWU2JIcVliN3BqRExIaXdEU3ZiYmFOcG54TG00T3g2aW5acDF2SGZHc1pURDlEOHZxcmRkd3RDV1ZMQnBCSU9yTkFJejNoaTFsVW1PcEZ4TzBXWVluRUJiakY4Zw?oc=5",
       "source": "Google News"
     }
   ]
